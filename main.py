@@ -2,6 +2,9 @@ import platform
 import psutil
 import math
 
+# thor main function
+def dragon_lair():
+    return True
 
 def GetPCInfo():
     Result = "\nName: "
