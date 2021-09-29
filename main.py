@@ -38,11 +38,16 @@ def user_chose_from_list(list):
     chose_index = chose_number - 1
     return chose_index
 
-# TEST CODE
-print(user_chose_from_list(('tetetete', 'dggddgdgdgdggdg')))
-
 # thor main function
-def dragon_lair():
+def dragons_lair():
+    you_are_list = ('Strong', 'Fast', 'Smart')
+
+    print('What are you')
+    you_are_index = user_chose_from_list(you_are_list)
+    print(f'You are {you_are_list[you_are_index]}')
+
+    # TODO rest of the advangeure in the drgons lair
+
     return True
 
 def GetPCInfo():
@@ -64,3 +69,5 @@ def GetPCInfo():
 
 # # temp comments to not run
 # print(GetPCInfo()) 
+
+dragons_lair()
