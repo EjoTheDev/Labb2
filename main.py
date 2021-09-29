@@ -47,13 +47,6 @@ def show_thnks():
 options = [1,2,3,4,5]
 PI = math.pi
 
-def ask_user(prompt):
-    s = input(prompt)
-    try:
-        result = int(s)
-        return result
-    except:
-        return 0
 
 def is_options(value):
     try:
