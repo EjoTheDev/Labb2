@@ -69,7 +69,7 @@ def start_cal():
     show_options()
     choice = int(input("Please make your choice: "))
     while is_options(choice) == False:
-      choice = int(input("Please make your right choice: "))
+      choice = int(input("Please make your right choice between (1-5): "))
     unit = input("Which unit you want to use in this calculation? ")
     if choice in dic_shape_form.keys():
       if choice == 1:
