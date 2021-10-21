@@ -142,5 +142,3 @@ def dragons_lair():
     else:
         raise ValueError(f'Something has gone wrong and looked_closer_at is not a valid value but is: {looked_closer_at}')
     raise SyntaxError(f'Something has gone wrong as the code shall not even be able to reach here')
-
-dragons_lair()
