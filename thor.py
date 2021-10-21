@@ -1,7 +1,3 @@
-import platform
-# # Temp comment for not haveing psutil
-# import psutil 
-import math
 
 def get_user_int_input(question):
     # Get input from user called int_input as int based on str question. If input is not int reppet until it is an int.
@@ -146,25 +142,5 @@ def dragons_lair():
     else:
         raise ValueError(f'Something has gone wrong and looked_closer_at is not a valid value but is: {looked_closer_at}')
     raise SyntaxError(f'Something has gone wrong as the code shall not even be able to reach here')
-
-def GetPCInfo():
-    Result = "\nName: "
-    Result += platform.node()
-    Result += "\nOS: "
-    Result += platform.platform()
-    Result += "\nCPU: "
-    Result += platform.processor()
-    Result += "\nArchitecture: "
-    Result += platform.machine()
-    Result += "\nMemory: "
-    Result += str(math.ceil(psutil.virtual_memory().total/(1024.**3))) + "GB"
-    Result += "\nMemory Usage: "
-    Result += str(psutil.virtual_memory().percent) + "%"
-    Result += "\nPython Version: "
-    Result += platform.python_version()
-    return Result
-
-# # temp comments to not run
-# print(GetPCInfo()) 
 
 dragons_lair()
