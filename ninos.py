@@ -118,5 +118,5 @@ def start_cal():
       else:
         print("Please, chose the corect option!!")  
   show_thnks()
-start_cal()
+#start_cal()
 #=================END Ninos Zaiya========================
